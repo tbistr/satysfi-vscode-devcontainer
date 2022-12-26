@@ -1,0 +1,18 @@
+{
+	"name": "satysfi-vscode-devcontainer",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"remoteUser": "vscode",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"satysfi-workshop.languageServer.enabled": true,
+				"satysfi-workshop.languageServer.path": "/home/vscode/.cargo/bin/satysfi-language-server"
+			},
+			"extensions": [
+				"pickoba.satysfi-workshop"
+			]
+		}
+	}
+}
